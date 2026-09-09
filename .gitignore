@@ -1,0 +1,85 @@
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Editors
+.vscode/
+
+# Build artifacts
+dist/
+build/
+.output/
+.vercel/
+.nitro/
+target/
+
+# WorkBuddy
+.workbuddy/
+
+# App Builder platform workspace (sandbox-only, not part of the app)
+.grok/
+
+# Internal review artifacts (not part of the app)
+artifacts/
+
+# browser-smoke run outputs (screenshots/starwake-* promo shots ARE committed)
+screenshots/app-builder-preview*
+
+# Sandbox/local-only files (kept on disk, not part of the open-source repo)
+.node_modules.lock
+AGENTS.md
+startup.sh
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# C/C++
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.dylib
+*.exe
+
+# Compression
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    // checkJs types the build/test scripts themselves (they are plain ESM
+    // with // @ts-check or plain .mjs) — real type errors in deployment
+    // tooling must surface in CI, not at deploy time.
+    "allowJs": true,
+    "checkJs": true,
+    // strict:false + noImplicitAny:false keeps ~260 annotation-only findings
+    // (TS7006/7031/7034) out; real type errors — wrong argument counts,
+    // impossible assignments, bad property access — still surface.
+    "strict": false,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["scripts"]
+}
